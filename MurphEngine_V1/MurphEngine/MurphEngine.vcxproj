@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{16d8e9c9-0dbf-43cc-863a-2f8bc93521cb}</ProjectGuid>
+    <RootNamespace>MurphEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir).Build/Output/$(ProjectName)/$(Platform)/$(Configuration)/</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir).Build/Output/$(ProjectName)/$(Platform)/$(Configuration)/</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir).Build/Output/MurphGame/$(Platform)/$(Configuration)/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir).Build/Output/$(ProjectName)/$(Platform)/$(Configuration)/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include;$(ProjectDir)Source;$(ProjectDir)Source\Middleware\SDL2\include;$(ProjectDir)Source\Middleware\SDL2_image\include;$(ProjectDir)Source\Middleware\SDL2_mixer\include;$(ProjectDir)Source\Middleware\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_mixer.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Source\Middleware\SDL2\lib\$(PlatformShortName)\;$(ProjectDir)Source\Middleware\SDL2_image\lib\$(PlatformShortName)\;$(ProjectDir)Source\Middleware\SDL2_mixer\lib\$(PlatformShortName)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /ignore:4006</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Source\Middleware\SDL2\lib\$(PlatformShortName)\*.dll" "$(OutDir)" /y /i /d
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Include;$(ProjectDir)Source;$(ProjectDir)Source\Middleware\SDL2\include;$(ProjectDir)Source\Middleware\SDL2_image\include;$(ProjectDir)Source\Middleware\SDL2_mixer\include;$(ProjectDir)Source\Middleware\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_mixer.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Source\Middleware\SDL2\lib\$(PlatformShortName)\;$(ProjectDir)Source\Middleware\SDL2_image\lib\$(PlatformShortName)\;$(ProjectDir)Source\Middleware\SDL2_mixer\lib\$(PlatformShortName)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /ignore:4006</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Source\Middleware\SDL2\lib\$(PlatformShortName)\*.dll" "$(OutDir)" /y /i /d
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source\;$(ProjectDir)Source\Middleware\SDL2\include;$(ProjectDir)Source\Middleware\SDL2_image\include;$(ProjectDir)Source\Middleware\SDL2_mixer\include;$(ProjectDir)Source\Middleware\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_mixer.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Source\Middleware\SDL2\lib\$(PlatformShortName)\;$(ProjectDir)Source\Middleware\SDL2_image\lib\$(PlatformShortName)\;$(ProjectDir)Source\Middleware\SDL2_mixer\lib\$(PlatformShortName)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /ignore:4006</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+xcopy "$(ProjectDir)Source\Middleware\SDL2\lib\$(PlatformShortName)\*.dll" "$(SolutionDir)\.Build\Output\MurphGame\$(PlatformShortName)\$(Configuration)\" /y /i /d
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source\;$(ProjectDir)Source\Middleware\SDL2\include;$(ProjectDir)Source\Middleware\SDL2_image\include;$(ProjectDir)Source\Middleware\SDL2_mixer\include;$(ProjectDir)Source\Middleware\</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2_mixer.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Source\Middleware\SDL2\lib\$(PlatformShortName)\;$(ProjectDir)Source\Middleware\SDL2_image\lib\$(PlatformShortName)\;$(ProjectDir)Source\Middleware\SDL2_mixer\lib\$(PlatformShortName)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /ignore:4006</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Source\Middleware\SDL2\lib\$(PlatformShortName)\*.dll" "$(OutDir)" /y /i /d
+xcopy "$(ProjectDir)Source\Middleware\SDL2_image\lib\$(PlatformShortName)\*.dll" "$(OutDir)" /y /i /d</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ActorManager.h" />
+    <ClInclude Include="AIComponent.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Box2DContactListener.h" />
+    <ClInclude Include="ColliderComponent.h" />
+    <ClInclude Include="DataManagerBase.h" />
+    <ClInclude Include="DynamicCollider.h" />
+    <ClInclude Include="InputComponent.h" />
+    <ClInclude Include="KillerCollider.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="EventSystem.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="IActor.h" />
+    <ClInclude Include="IComponent.h" />
+    <ClInclude Include="IGraphics.h" />
+    <ClInclude Include="IKeyboard.h" />
+    <ClInclude Include="ISystem.h" />
+    <ClInclude Include="ITime.h" />
+    <ClInclude Include="IWindow.h" />
+    <ClInclude Include="Logging.h" />
+    <ClInclude Include="MarkdownPrint.h" />
+    <ClInclude Include="MovementComponent.h" />
+    <ClInclude Include="MurphKeyboard.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PhysicsManager.h" />
+    <ClInclude Include="PlainPrint.h" />
+    <ClInclude Include="PlayerCollider.h" />
+    <ClInclude Include="PrintSystem.h" />
+    <ClInclude Include="ProjectileGenerationComponent.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="ResourceMetaData.h" />
+    <ClInclude Include="Source\Middleware\Bleach_New\BleachNew.h" />
+    <ClInclude Include="Source\Middleware\Bleach_New\BleachNewConfig.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_api.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_block_allocator.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_body.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_broad_phase.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_chain_shape.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_circle_shape.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_collision.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_common.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_contact.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_contact_manager.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_distance.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_distance_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_draw.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_dynamic_tree.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_edge_shape.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_fixture.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_friction_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_gear_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_growable_stack.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_math.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_motor_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_mouse_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_polygon_shape.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_prismatic_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_pulley_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_revolute_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_rope.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_settings.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_shape.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_stack_allocator.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_timer.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_time_of_impact.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_time_step.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_types.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_weld_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_wheel_joint.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_world.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_world_callbacks.h" />
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\box2d.h" />
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_chain_circle_contact.h" />
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_chain_polygon_contact.h" />
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_circle_contact.h" />
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_contact_solver.h" />
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_edge_circle_contact.h" />
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_edge_polygon_contact.h" />
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_island.h" />
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_polygon_circle_contact.h" />
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_polygon_contact.h" />
+    <ClInclude Include="SpriteComponent.h" />
+    <ClInclude Include="StaticCollider.h" />
+    <ClInclude Include="TextData.h" />
+    <ClInclude Include="TextManager.h" />
+    <ClInclude Include="TextureData.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="TimeManager.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="WebPrint.h" />
+    <ClInclude Include="WindowsSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ActorManager.cpp" />
+    <ClCompile Include="AIComponent.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Box2DContactListener.cpp" />
+    <ClCompile Include="ColliderComponent.cpp" />
+    <ClCompile Include="DataManagerBase.cpp" />
+    <ClCompile Include="DynamicCollider.cpp" />
+    <ClCompile Include="InputComponent.cpp" />
+    <ClCompile Include="KillerCollider.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="EventSystem.cpp" />
+    <ClCompile Include="IActor.cpp" />
+    <ClCompile Include="IComponent.cpp" />
+    <ClCompile Include="IGraphics.cpp" />
+    <ClCompile Include="IKeyboard.cpp" />
+    <ClCompile Include="ISystem.cpp" />
+    <ClCompile Include="ITime.cpp" />
+    <ClCompile Include="IWindow.cpp" />
+    <ClCompile Include="Logging.cpp" />
+    <ClCompile Include="MarkdownPrint.cpp" />
+    <ClCompile Include="MovementComponent.cpp" />
+    <ClCompile Include="MurphEngine.cpp" />
+    <ClCompile Include="MurphKeyboard.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PhysicsManager.cpp" />
+    <ClCompile Include="PlainPrint.cpp" />
+    <ClCompile Include="PlayerCollider.cpp" />
+    <ClCompile Include="PrintSystem.cpp" />
+    <ClCompile Include="ProjectileGenerationComponent.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="ResourceMetaData.cpp" />
+    <ClCompile Include="Source\Middleware\Bleach_New\BleachNew.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_broad_phase.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_chain_shape.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_circle_shape.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_collide_circle.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_collide_edge.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_collide_polygon.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_collision.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_distance.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_dynamic_tree.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_edge_shape.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_polygon_shape.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_time_of_impact.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_block_allocator.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_draw.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_math.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_settings.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_stack_allocator.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_timer.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_body.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_chain_circle_contact.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_chain_polygon_contact.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_circle_contact.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_contact.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_contact_manager.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_contact_solver.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_distance_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_edge_circle_contact.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_edge_polygon_contact.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_fixture.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_friction_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_gear_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_island.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_motor_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_mouse_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_polygon_circle_contact.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_polygon_contact.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_prismatic_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_pulley_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_revolute_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_weld_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_wheel_joint.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_world.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_world_callbacks.cpp" />
+    <ClCompile Include="Source\Middleware\Box2D\src\rope\b2_rope.cpp" />
+    <ClCompile Include="SpriteComponent.cpp" />
+    <ClCompile Include="StaticCollider.cpp" />
+    <ClCompile Include="TextData.cpp" />
+    <ClCompile Include="TextManager.cpp" />
+    <ClCompile Include="TextureData.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TimeManager.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="WebPrint.cpp" />
+    <ClCompile Include="WindowsSystem.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

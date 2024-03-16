@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{0a1a4052-dcc9-4578-8210-2f5ec685e137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System">
+      <UniqueIdentifier>{0773da3a-ac5b-48f5-b482-8a767074c706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Window">
+      <UniqueIdentifier>{9b7d16f6-5b60-4386-8391-bfea569033b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Graphics">
+      <UniqueIdentifier>{962ef382-4d68-41c9-a656-6bdd2b506230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Input">
+      <UniqueIdentifier>{edfd4adc-5df9-4774-86b5-ee84d005db61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Input\Keyboard">
+      <UniqueIdentifier>{0e87c35b-2d6e-452e-a7d7-0038ccc76e2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Input\Mouse">
+      <UniqueIdentifier>{e2ba925a-996a-4135-88b3-009f4636ec09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Logging">
+      <UniqueIdentifier>{a9810324-4690-4eea-982b-dabdbf03ee6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Print">
+      <UniqueIdentifier>{7036e916-24ba-4d03-a06d-82475126b18a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor">
+      <UniqueIdentifier>{a61142e0-11be-4988-9fb7-fb129518b702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor\Components">
+      <UniqueIdentifier>{5ef7d701-80a9-4951-86b5-48f503e21b9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor\Components\Location">
+      <UniqueIdentifier>{38234dcf-779b-4cd3-a022-486ad040bd4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor\Components\Movement">
+      <UniqueIdentifier>{1127ccc4-11ad-493c-a689-a40f9382f9f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor\Components\Sprite">
+      <UniqueIdentifier>{49001eb9-63cd-47eb-b6c3-827b821056a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor\Components\Collider">
+      <UniqueIdentifier>{a69658fb-03d0-4a09-8da1-94e2f24692e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor\Components\AI">
+      <UniqueIdentifier>{2dbbbc20-f302-4672-93d7-4f2fc24297c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Time Management">
+      <UniqueIdentifier>{363ee85e-a141-46f2-8c1d-d1c0c8b8300b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Event">
+      <UniqueIdentifier>{c380015e-2794-48ab-b3b5-da1d6961e4ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Object Manager">
+      <UniqueIdentifier>{71765c09-8b7d-4b8c-8460-864c11bdf0d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor\Components\Collider\Box2D">
+      <UniqueIdentifier>{5ba39581-76e0-4660-9345-40eb0b627bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor\Components\Collider\Static Collider">
+      <UniqueIdentifier>{10080ece-9418-4dd0-b3f5-8f529bb6cdc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor\Components\Collider\Dynamic Collider">
+      <UniqueIdentifier>{7144ffd2-af79-40d9-9e5a-a0b7a5b7d33b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\Physics Manager">
+      <UniqueIdentifier>{0ea0eca6-f711-4a87-8c06-7bca0deaef2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\ResourceManager">
+      <UniqueIdentifier>{226053e2-ffef-4e8d-9cee-2ea4f882a3c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\ResourceManager\TextureManager">
+      <UniqueIdentifier>{01ee43f7-eadf-4512-b98e-28f561215af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\ResourceManager\Resource MetaData">
+      <UniqueIdentifier>{5c90bc36-7a62-42bb-9a34-eee01008b0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\ResourceManager\Resource MetaData\TextureData">
+      <UniqueIdentifier>{670efe54-cd21-4b4e-9175-109408871189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\ResourceManager\Resource MetaData\TextData">
+      <UniqueIdentifier>{a70c48b5-de44-4503-a748-b96e084e9d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\System\ResourceManager\TextManager">
+      <UniqueIdentifier>{63e7356e-22ee-4916-8702-36661dd69a08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Actor\Components\Projectile">
+      <UniqueIdentifier>{339d2693-9db6-4ece-8e9f-bc143210107d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkdownPrint.h">
+      <Filter>Source Files\Application\System\Print</Filter>
+    </ClInclude>
+    <ClInclude Include="PlainPrint.h">
+      <Filter>Source Files\Application\System\Print</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintSystem.h">
+      <Filter>Source Files\Application\System\Print</Filter>
+    </ClInclude>
+    <ClInclude Include="WebPrint.h">
+      <Filter>Source Files\Application\System\Print</Filter>
+    </ClInclude>
+    <ClInclude Include="Logging.h">
+      <Filter>Source Files\Application\System\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="ISystem.h">
+      <Filter>Source Files\Application\System</Filter>
+    </ClInclude>
+    <ClInclude Include="IGraphics.h">
+      <Filter>Source Files\Application\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IWindow.h">
+      <Filter>Source Files\Application\System\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsSystem.h">
+      <Filter>Source Files\Application\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Source Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="IKeyboard.h">
+      <Filter>Source Files\Application\System\Input\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="MurphKeyboard.h">
+      <Filter>Source Files\Application\System\Input\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Source Files\Application\Actor\Components\Location</Filter>
+    </ClInclude>
+    <ClInclude Include="IActor.h">
+      <Filter>Source Files\Application\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="IComponent.h">
+      <Filter>Source Files\Application\Actor\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="MovementComponent.h">
+      <Filter>Source Files\Application\Actor\Components\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteComponent.h">
+      <Filter>Source Files\Application\Actor\Components\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderComponent.h">
+      <Filter>Source Files\Application\Actor\Components\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="AIComponent.h">
+      <Filter>Source Files\Application\Actor\Components\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSystem.h">
+      <Filter>Source Files\Application\System\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
+      <Filter>Source Files\Application\System\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Source Files\Application\System\Time Management</Filter>
+    </ClInclude>
+    <ClInclude Include="ITime.h">
+      <Filter>Source Files\Application\System\Time Management</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorManager.h">
+      <Filter>Source Files\Application\System\Object Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_timer.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_types.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_weld_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_wheel_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_world.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_world_callbacks.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\box2d.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_api.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_block_allocator.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_body.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_broad_phase.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_chain_shape.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_circle_shape.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_collision.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_common.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_contact.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_contact_manager.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_distance.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_distance_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_draw.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_dynamic_tree.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_edge_shape.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_fixture.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_friction_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_gear_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_growable_stack.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_math.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_motor_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_mouse_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_polygon_shape.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_prismatic_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_pulley_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_revolute_joint.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_rope.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_settings.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_shape.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_stack_allocator.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_time_of_impact.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\include\box2d\b2_time_step.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_chain_circle_contact.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_chain_polygon_contact.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_circle_contact.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_contact_solver.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_edge_circle_contact.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_edge_polygon_contact.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_island.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_polygon_circle_contact.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Box2D\src\dynamics\b2_polygon_contact.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="InputComponent.h">
+      <Filter>Source Files\Application\Actor\Components\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticCollider.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Static Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicCollider.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Dynamic Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Box2DContactListener.h">
+      <Filter>Source Files\Application\Actor\Components\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerCollider.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Dynamic Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsManager.h">
+      <Filter>Source Files\Application\System\Physics Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="KillerCollider.h">
+      <Filter>Source Files\Application\Actor\Components\Collider\Dynamic Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Bleach_New\BleachNew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Middleware\Bleach_New\BleachNewConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Source Files\Application\System\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Source Files\Application\System\ResourceManager\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceMetaData.h">
+      <Filter>Source Files\Application\System\ResourceManager\Resource MetaData</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureData.h">
+      <Filter>Source Files\Application\System\ResourceManager\Resource MetaData\TextureData</Filter>
+    </ClInclude>
+    <ClInclude Include="TextManager.h">
+      <Filter>Source Files\Application\System\ResourceManager\TextManager</Filter>
+    </ClInclude>
+    <ClInclude Include="TextData.h">
+      <Filter>Source Files\Application\System\ResourceManager\Resource MetaData\TextData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManagerBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectileGenerationComponent.h">
+      <Filter>Source Files\Application\Actor\Components\Projectile</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MurphEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkdownPrint.cpp">
+      <Filter>Source Files\Application\System\Print</Filter>
+    </ClCompile>
+    <ClCompile Include="PlainPrint.cpp">
+      <Filter>Source Files\Application\System\Print</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintSystem.cpp">
+      <Filter>Source Files\Application\System\Print</Filter>
+    </ClCompile>
+    <ClCompile Include="WebPrint.cpp">
+      <Filter>Source Files\Application\System\Print</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging.cpp">
+      <Filter>Source Files\Application\System\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="ISystem.cpp">
+      <Filter>Source Files\Application\System</Filter>
+    </ClCompile>
+    <ClCompile Include="IGraphics.cpp">
+      <Filter>Source Files\Application\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="IWindow.cpp">
+      <Filter>Source Files\Application\System\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsSystem.cpp">
+      <Filter>Source Files\Application\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="IKeyboard.cpp">
+      <Filter>Source Files\Application\System\Input\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="MurphKeyboard.cpp">
+      <Filter>Source Files\Application\System\Input\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Source Files\Application\Actor\Components\Location</Filter>
+    </ClCompile>
+    <ClCompile Include="IActor.cpp">
+      <Filter>Source Files\Application\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="IComponent.cpp">
+      <Filter>Source Files\Application\Actor\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="MovementComponent.cpp">
+      <Filter>Source Files\Application\Actor\Components\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteComponent.cpp">
+      <Filter>Source Files\Application\Actor\Components\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderComponent.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="AIComponent.cpp">
+      <Filter>Source Files\Application\Actor\Components\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSystem.cpp">
+      <Filter>Source Files\Application\System\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
+      <Filter>Source Files\Application\System\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Source Files\Application\System\Time Management</Filter>
+    </ClCompile>
+    <ClCompile Include="ITime.cpp">
+      <Filter>Source Files\Application\System\Time Management</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorManager.cpp">
+      <Filter>Source Files\Application\System\Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_broad_phase.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_chain_shape.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_circle_shape.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_collide_circle.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_collide_edge.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_collide_polygon.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_collision.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_distance.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_dynamic_tree.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_edge_shape.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_polygon_shape.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\collision\b2_time_of_impact.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_block_allocator.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_draw.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_math.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_settings.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_stack_allocator.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\common\b2_timer.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_body.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_chain_circle_contact.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_chain_polygon_contact.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_circle_contact.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_contact.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_contact_manager.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_contact_solver.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_distance_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_edge_circle_contact.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_edge_polygon_contact.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_fixture.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_friction_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_gear_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_island.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_motor_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_mouse_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_polygon_circle_contact.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_polygon_contact.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_prismatic_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_pulley_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_revolute_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_weld_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_wheel_joint.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_world.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\dynamics\b2_world_callbacks.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Box2D\src\rope\b2_rope.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="InputComponent.cpp">
+      <Filter>Source Files\Application\Actor\Components\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticCollider.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Static Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicCollider.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Dynamic Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Box2DContactListener.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerCollider.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Dynamic Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsManager.cpp">
+      <Filter>Source Files\Application\System\Physics Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="KillerCollider.cpp">
+      <Filter>Source Files\Application\Actor\Components\Collider\Dynamic Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Middleware\Bleach_New\BleachNew.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\Application\System\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\Application\System\ResourceManager\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceMetaData.cpp">
+      <Filter>Source Files\Application\System\ResourceManager\Resource MetaData</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureData.cpp">
+      <Filter>Source Files\Application\System\ResourceManager\Resource MetaData\TextureData</Filter>
+    </ClCompile>
+    <ClCompile Include="TextManager.cpp">
+      <Filter>Source Files\Application\System\ResourceManager\TextManager</Filter>
+    </ClCompile>
+    <ClCompile Include="TextData.cpp">
+      <Filter>Source Files\Application\System\ResourceManager\Resource MetaData\TextData</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManagerBase.cpp">
+      <Filter>Source Files\Application\System\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectileGenerationComponent.cpp">
+      <Filter>Source Files\Application\Actor\Components\Projectile</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
