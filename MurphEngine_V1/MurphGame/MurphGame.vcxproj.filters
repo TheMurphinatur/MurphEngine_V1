@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ActorFactory">
+      <UniqueIdentifier>{e61cb83f-5bca-4bce-8f31-592af5cbc5c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameComponents">
+      <UniqueIdentifier>{a31196ab-47ce-49c9-a276-54b4bc38626f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameComponents\PlayerComponents">
+      <UniqueIdentifier>{f1d81245-036d-4dac-b656-247fe8049802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameComponents\EnemyComponents">
+      <UniqueIdentifier>{75fdeeb6-558c-4116-a859-fd3a445b7425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameComponents\Projectile Component">
+      <UniqueIdentifier>{67cb6033-f85e-4dea-b1d9-362332addd67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameComponents\ShieldComponent">
+      <UniqueIdentifier>{33b42909-6223-4f04-aecf-8a4177a77ad9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MurphGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorFactory.cpp">
+      <Filter>Source Files\ActorFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerShipMove.cpp">
+      <Filter>Source Files\GameComponents\PlayerComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyShipCollider.cpp">
+      <Filter>Source Files\GameComponents\EnemyComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyMove.cpp">
+      <Filter>Source Files\GameComponents\EnemyComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletCollider.cpp">
+      <Filter>Source Files\GameComponents\Projectile Component</Filter>
+    </ClCompile>
+    <ClCompile Include="FiringComponent.cpp">
+      <Filter>Source Files\GameComponents\PlayerComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="ShieldCollider.cpp">
+      <Filter>Source Files\GameComponents\ShieldComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBulletCollider.cpp">
+      <Filter>Source Files\GameComponents\Projectile Component</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyFiringComponent.cpp">
+      <Filter>Source Files\GameComponents\Projectile Component</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerShipCollider.cpp">
+      <Filter>Source Files\GameComponents\PlayerComponents</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActorFactory.h">
+      <Filter>Source Files\ActorFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerShipMove.h">
+      <Filter>Source Files\GameComponents\PlayerComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyShipCollider.h">
+      <Filter>Source Files\GameComponents\EnemyComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyMove.h">
+      <Filter>Source Files\GameComponents\EnemyComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletCollider.h">
+      <Filter>Source Files\GameComponents\Projectile Component</Filter>
+    </ClInclude>
+    <ClInclude Include="FiringComponent.h">
+      <Filter>Source Files\GameComponents\PlayerComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ShieldCollider.h">
+      <Filter>Source Files\GameComponents\ShieldComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameApplication.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBulletCollider.h">
+      <Filter>Source Files\GameComponents\Projectile Component</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyFiringComponent.h">
+      <Filter>Source Files\GameComponents\Projectile Component</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerShipCollider.h">
+      <Filter>Source Files\GameComponents\PlayerComponents</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
